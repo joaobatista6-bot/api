@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f2f4f7;
+
+    color: #222;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 50px 20px;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TÍTULO */
+
+h1 {
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #111827;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+
+form input {
+    flex: 1;
+
+    height: 46px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: border-color 0.2s;
+}
+
+
+form input:focus {
+    border-color: #2563eb;
+}
+
+
+form button {
+    height: 46px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+
+form button:hover {
+    background: #1d4ed8;
+}
+
+
+/* MENSAGEM */
+
+#mensagem {
+    text-align: center;
+
+    color: #dc2626;
+
+    margin-bottom: 20px;
+}
+
+
+/* CARD DO CACHORRO */
+
+.cachorro-card {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+/* NOME */
+
+.cachorro-card h2 {
+    margin: 0 0 22px;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    color: #111827;
+}
+
+
+/* IMAGEM */
+
+.imagem-cachorro {
+    display: block;
+
+    width: 100%;
+
+    max-width: 480px;
+
+    height: 320px;
+
+    margin: 0 auto 30px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    background: #f3f4f6;
+}
+
+
+/* SEÇÕES */
+
+.informacoes,
+.caracteristicas {
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    margin-top: 20px;
+
+    background: #ffffff;
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+
+.informacoes h3,
+.caracteristicas h3 {
+    margin: 0 0 20px;
+
+    font-size: 20px;
+
+    color: #111827;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    padding-bottom: 12px;
+}
+
+
+/* GRID DE INFORMAÇÕES */
+
+.dados-raca {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+
+.dado {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 14px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+}
+
+
+.dado span,
+.personalidade span {
+    font-size: 13px;
+
+    color: #6b7280;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.3px;
+}
+
+
+.dado strong {
+    font-size: 16px;
+
+    color: #111827;
+}
+
+
+/* PERSONALIDADE */
+
+.personalidade {
+    margin-top: 15px;
+
+    padding: 14px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+}
+
+
+.personalidade p {
+    margin: 7px 0 0;
+
+    color: #374151;
+
+    line-height: 1.5;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas ul {
+    margin: 0;
+
+    padding-left: 20px;
+}
+
+
+.caracteristicas li {
+    margin-bottom: 10px;
+
+    color: #374151;
+
+    line-height: 1.5;
+}
+
+
+.caracteristicas li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* SEM INFORMAÇÕES */
+
+.sem-informacoes {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #6b7280;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+}
+
+
+/* CARREGANDO */
+
+.carregando {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+
+    .container {
+        padding: 22px;
+
+        border-radius: 12px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    form {
+        flex-direction: column;
+    }
+
+
+    form button {
+        width: 100%;
+    }
+
+
+    .dados-raca {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagem-cachorro {
+        height: 260px;
+    }
+
+
+    .cachorro-card h2 {
+        font-size: 24px;
+    }
+
+}

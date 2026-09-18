@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dog CEO API</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Dog CEO API</h1>
+
+        <form onsubmit="buscarCachorro(event)">
+
+            <input
+                type="text"
+                id="raca"
+                placeholder="Digite uma raça, por exemplo: labrador"
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Buscar
+            </button>
+
+        </form>
+
+        <p id="mensagem"></p>
+
+        <div id="resultado"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
