@@ -1,4 +1,4 @@
-Qual API você usou: Dog CEO API — documentação: https://dog.ceo/dog-api/
+Qual API você usou: Dog CEO API — https://dog.ceo/dog-api/
 
 O que ela devolve: A API devolve URLs de imagens de cachorros e o status da consulta.
 
